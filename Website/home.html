@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Literacy Workshop - Home</title>
+    
+    <link rel="icon" href="Unilogo.jpeg" type="image/x-icon">   
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        /* Vibrant Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 5rem 0;
+            color: white;
+            border-bottom: 5px solid #ffba08; /* Pop of yellow */
+        }
+
+        /* Card Styles */
+        .credit-card {
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .credit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Theme Accents */
+        .card-teacher { border-top: 8px solid #ffba08; } /* Yellow for Teacher/Advisor */
+        .card-team-1 { border-top: 8px solid #ff4757; }  /* Red */
+        .card-team-2 { border-top: 8px solid #1e90ff; }  /* Blue */
+        .card-team-3 { border-top: 8px solid #2ed573; }  /* Green */
+
+        /* Avatar Placeholder Styles (Initials) */
+        .avatar-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin: -50px auto 1rem auto; /* Overlaps the top border */
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .bg-teacher { background-color: #ffba08; }
+        .bg-team-1 { background-color: #ff4757; }
+        .bg-team-2 { background-color: #1e90ff; }
+        .bg-team-3 { background-color: #2ed573; }
+
+        /* Section Titles */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            color: #2f3542;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: #667eea;
+            bottom: -10px;
+            left: 25%;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Unilogo.jpeg" alt="University Logo" width="45" height="45" class="me-3 rounded bg-white p-1">
+                <strong style="letter-spacing: 0.5px;">Digital Literacy Initiative</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home & Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="main.html">Workshop Resources <i class="bi bi-arrow-right-circle ms-1"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Empowering Our Community 🌟</h1>
+            <p class="lead mx-auto" style="max-width: 800px; opacity: 0.9;">
+                Bridging the digital divide for underserved students. We believe everyone deserves the knowledge to stay safe online, utilize AI, and build a positive digital presence.
+            </p>
+            <div class="mt-4">
+                <a href="resources.html" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 shadow">Go to Workshop Resources</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5 mt-4">
+        
+        <div class="text-center mb-5">
+            <h2 class="section-title">Special Thanks to Our Advisor</h2>
+        </div>
+        
+        <div class="row justify-content-center mb-5 pb-4">
+            <div class="col-md-6 col-lg-5">
+                <div class="card credit-card card-teacher p-4 text-center mt-4">
+                    <div class="avatar-circle bg-teacher">SK</div>
+                    <h3 class="h4 fw-bold text-dark mt-2">Sir Hafiz Muhammad Sufiyan Khilji</h3>
+                    <h6 class="text-uppercase text-warning fw-bold mb-3">Project Advisor</h6>
+                    <p class="text-muted">
+                        Thank you to our incredible professor for guiding this project, providing invaluable feedback, and inspiring us to make a real-world impact in our community.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Meet the Team</h2>
+            <p class="text-muted">The passionate students who brought this workshop to life.</p>
+        </div>
+
+        <div class="row g-5 mt-2">
+            
+            <div class="col-md-4">
+                <div class="card credit-card card-team-1 p-4 text-center">
+                    <div class="avatar-circle bg-team-1">AA</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Arhama Batool</h3>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Team Leader</h6>
+                    <p class="text-muted small">
+                        Coordinated group members to efficiently manage work load and time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-2 p-4 text-center">
+                    <div class="avatar-circle bg-team-2">NN</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Nabeeha Noor</h3>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance Researcher and Presenter</h6>
+                    <p class="text-muted small">
+                        Developed the guides on using Gemini and ChatGPT, focusing on productivity and online freelancing skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-3 p-4 text-center">
+                    <div class="avatar-circle bg-team-3">AR</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Abdul Rafay</h3>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance Researcher and Presenter</h6>
+                    <p class="text-muted small">
+                        Helped to develope guide regarding the freelancing skills for students. 
+                    </p>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+                <div class="card credit-card card-team-1 p-4 text-center">
+                    <div class="avatar-circle bg-team-1">DS</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Dujana Saeed</h3>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Locations Manager</h6>
+                    <p class="text-muted small">
+                        Researched and selectd schools for workshops, efficiently managing permissions and availibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-2 p-4 text-center">
+                    <div class="avatar-circle bg-team-2">AN</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Aliza Nadeem</h3>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Internet Safety Researcher and Presenter</h6>
+                    <p class="text-muted small">
+                        Researched for resources for internet safety to keep students and families protected.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-3 p-4 text-center">
+                    <div class="avatar-circle bg-team-3">MF</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Muskan Fatima</h3>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Cyber Awareness Researcher and Presenter </h6>
+                    <p class="text-muted small">
+                        Compiled resource materials regarding phishing, scams and safrty awareness.
+                    </p>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+                <div class="card credit-card card-team-1 p-4 text-center">
+                    <div class="avatar-circle bg-team-1">KN</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Kashaf Naz</h3>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;"> Presenter</h6>
+                    <p class="text-muted small">
+                        Assisted other members in research and presentations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-2 p-4 text-center">
+                    <div class="avatar-circle bg-team-2">HA</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Hooriya Amir</h3>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Presenter</h6>
+                    <p class="text-muted small">
+                        Developed the guides on using using internet safely and presenting information to students.
+                    </p>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-1 p-4 text-center">
+                    <div class="avatar-circle bg-team-1">GA</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Ghazanfar Akram</h3>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Researcher</h6>
+                    <p class="text-muted small">
+                        Researched for resources regarding responsible active social media use.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card credit-card card-team-3 p-4 text-center">
+                    <div class="avatar-circle bg-team-3">HRM</div>
+                    <h3 class="h5 fw-bold text-dark mt-2">Hasnain Rasool Memon</h3>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Researcher</h6>
+                    <p class="text-muted small">
+                        Designed the website layout and curated the Responsible Social Media modules for student well-being.
+                    </p>
+                </div>
+            </div>
+
+            
+
+            </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1 fw-bold">&copy; 2026 Digital Literacy Initiative.</p>
+            <p class="small text-white mb-0">Empowering underserved students with digital tools for a better tomorrow.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
