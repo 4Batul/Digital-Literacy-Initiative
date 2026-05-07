@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Literacy Workshop</title>
-    
-    <link rel="icon" href="Unilogo.jpeg" type="image/x-icon">   
+
+    <link rel="icon" href="Unilogo.jpeg" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <style>
         /* Base styles */
         body {
@@ -23,7 +24,8 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 5rem 0;
             color: white;
-            border-bottom: 5px solid #ffba08; /* Pop of yellow */
+            border-bottom: 5px solid #ffba08;
+            /* Pop of yellow */
         }
 
         /* Card Styles */
@@ -32,21 +34,32 @@
             border: none;
             border-radius: 15px;
             background-color: #ffffff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             position: relative;
         }
 
         .credit-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         /* Theme Accents */
-        .card-teacher { border-top: 8px solid #ffba08; } 
-        .card-team-1 { border-top: 8px solid #ff4757; }  
-        .card-team-2 { border-top: 8px solid #1e90ff; }  
-        .card-team-3 { border-top: 8px solid #2ed573; }  
+        .card-teacher {
+            border-top: 8px solid #ffba08;
+        }
+
+        .card-team-1 {
+            border-top: 8px solid #ff4757;
+        }
+
+        .card-team-2 {
+            border-top: 8px solid #1e90ff;
+        }
+
+        .card-team-3 {
+            border-top: 8px solid #2ed573;
+        }
 
         /* Avatar Styles (Updated for Images) */
         .avatar-circle {
@@ -56,11 +69,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: -50px auto 1rem auto; /* Overlaps the top border */
+            margin: -50px auto 1rem auto;
+            /* Overlaps the top border */
             border: 4px solid #ffffff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            object-fit: cover; /* Ensures the image fits the circle perfectly */
-            background-color: #f4f7f6; /* Fallback color */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            /* Ensures the image fits the circle perfectly */
+            background-color: #f4f7f6;
+            /* Fallback color */
         }
 
         /* Section Titles */
@@ -71,6 +87,7 @@
             font-weight: 700;
             color: #2f3542;
         }
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -85,11 +102,13 @@
         /* Carousel Image Styling */
         .carousel-img {
             object-fit: cover;
-            height: 500px; /* Adjust this value if you want the slideshow taller/shorter */
+            height: 500px;
+            /* Adjust this value if you want the slideshow taller/shorter */
             border-radius: 15px;
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
@@ -104,7 +123,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home & Team</a></li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="main.html">Workshop Resources <i class="bi bi-arrow-right-circle ms-1"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="main.html">Workshop Resources <i
+                                class="bi bi-arrow-right-circle ms-1"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -114,16 +134,18 @@
         <div class="container">
             <h1 class="display-4 fw-bold mb-3">Empowering Our Community 🌟</h1>
             <p class="lead mx-auto" style="max-width: 800px; opacity: 0.9;">
-                Bridging the digital divide for underserved students. We believe everyone deserves the knowledge to stay safe online, utilize AI, and build a positive digital presence.
+                Bridging the digital divide for underserved students. We believe everyone deserves the knowledge to stay
+                safe online, utilize AI, and build a positive digital presence.
             </p>
             <div class="mt-4">
-                <a href="main.html" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 shadow">Go to Workshop Resources</a>
+                <a href="main.html" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 shadow">Go to Workshop
+                    Resources</a>
             </div>
         </div>
     </header>
 
     <main class="container py-5 mt-4">
-        
+
         <div class="text-center mb-4">
             <h2 class="section-title">Workshop Highlights</h2>
             <p class="text-muted">Glimpses from our interactive sessions and school visits.</p>
@@ -131,49 +153,60 @@
 
         <div class="row justify-content-center mb-5 pb-5">
             <div class="col-lg-10">
-                <div id="workshopCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                <div id="workshopCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden"
+                    data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#workshopCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
 
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="highlight1.png" class="d-block w-100 carousel-img" style="width: fit-content; height: auto;" alt="Workshop Highlight 1">
+                            <img src="highlight1.png" class="d-block w-100 carousel-img"
+                                style="width: fit-content; height: auto;" alt="Workshop Highlight 1">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
                                 <h5></h5>
                                 <p>Productive Talk between respectful Principle and Sir Sufiyan </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="highlight2.png" class="d-block w-100 carousel-img" style="width: fit-content; height: auto;" alt="Workshop Highlight 2">
+                            <img src="highlight2.png" class="d-block w-100 carousel-img"
+                                style="width: fit-content; height: auto;" alt="Workshop Highlight 2">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
                                 <h5>Team Work </h5>
                                 <p>Group appreciation by Principal after the workshop</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="highlight3.png" class="d-block w-100 carousel-img" style="width: fit-content; height: auto;" alt="Workshop Highlight 3">
+                            <img src="highlight3.png" class="d-block w-100 carousel-img"
+                                style="width: fit-content; height: auto;" alt="Workshop Highlight 3">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
                                 <h5>Hands-on Experience</h5>
                                 <p>Empowering the next generation with digital tools.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="highlight4.png" class="d-block w-100 carousel-img" style="width: fit-content; height: auto;" alt="Workshop Highlight 4">
+                            <img src="highlight4.png" class="d-block w-100 carousel-img"
+                                style="width: fit-content; height: auto;" alt="Workshop Highlight 4">
                             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
                                 <h5>Community Impact</h5>
                                 <p>Guiding students through the digital literacy platform.</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#workshopCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#workshopCarousel"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#workshopCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#workshopCarousel"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -183,7 +216,7 @@
         <div class="text-center mb-5">
             <h2 class="section-title">Special Thanks to Our Advisor</h2>
         </div>
-        
+
         <div class="row justify-content-center mb-5 pb-4">
             <div class="col-md-6 col-lg-5">
                 <div class="card credit-card card-teacher p-4 text-center mt-4">
@@ -191,7 +224,8 @@
                     <h3 class="h4 fw-bold text-dark mt-2">Sir Hafiz Muhammad Sufiyan Khilji</h3>
                     <h6 class="text-uppercase text-warning fw-bold mb-3">Project Advisor</h6>
                     <p s="text-muted">
-                        Thank you to our incredible professor for guiding this project, providing invaluable feedback, and inspiring us to make a real-world impact in our community.
+                        Thank you to our incredible professor for guiding this project, providing invaluable feedback,
+                        and inspiring us to make a real-world impact in our community.
                     </p>
                 </div>
             </div>
@@ -203,7 +237,7 @@
         </div>
 
         <div class="row g-5 mt-2">
-            
+
             <div class="col-md-4">
                 <div class="card credit-card card-team-1 p-4 text-center">
                     <img src="arhama.png" alt="Arhama Batool" class="avatar-circle">
@@ -219,9 +253,11 @@
                 <div class="card credit-card card-team-2 p-4 text-center">
                     <img src="nabeeha.jpg" alt="Nabeeha Noor" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Nabeeha Noor</h3>
-                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance Researcher and Presenter</h6>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance
+                        Researcher and Presenter</h6>
                     <p class="text-muted small">
-                        Developed the guides on using Gemini and ChatGPT, focusing on productivity and online freelancing skills.
+                        Developed the guides on using Gemini and ChatGPT, focusing on productivity and online
+                        freelancing skills.
                     </p>
                 </div>
             </div>
@@ -230,20 +266,23 @@
                 <div class="card credit-card card-team-3 p-4 text-center">
                     <img src="abdulrafay.png" alt="Abdul Rafay" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Abdul Rafay</h3>
-                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance Researcher and Presenter</h6>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">AI & Freelance
+                        Researcher and Presenter</h6>
                     <p class="text-muted small">
-                        Helped to develop guides regarding freelancing skills for students. 
+                        Helped to develop guides regarding freelancing skills for students.
                     </p>
                 </div>
             </div>
 
-             <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="card credit-card card-team-1 p-4 text-center">
                     <img src="female.jpg" alt="Dujana Saeed" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Dujana Saeed</h3>
-                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Locations Manager</h6>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Locations Manager
+                    </h6>
                     <p class="text-muted small">
-                        Researched and selected schools for workshops, efficiently managing permissions and availability.
+                        Researched and selected schools for workshops, efficiently managing permissions and
+                        availability.
                     </p>
                 </div>
             </div>
@@ -252,7 +291,8 @@
                 <div class="card credit-card card-team-2 p-4 text-center">
                     <img src="aliza.png" alt="Aliza Nadeem" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Aliza Nadeem</h3>
-                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Internet Safety Researcher and Presenter</h6>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Internet Safety
+                        Researcher and Presenter</h6>
                     <p class="text-muted small">
                         Researched resources for internet safety to keep students and families protected.
                     </p>
@@ -263,14 +303,15 @@
                 <div class="card credit-card card-team-3 p-4 text-center">
                     <img src="muskan.jpg" alt="Muskan Fatima" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Muskan Fatima</h3>
-                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Cyber Awareness Researcher and Presenter </h6>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Cyber Awareness
+                        Researcher and Presenter </h6>
                     <p class="text-muted small">
                         Compiled resource materials regarding phishing, scams and safety awareness.
                     </p>
                 </div>
             </div>
 
-             <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="card credit-card card-team-1 p-4 text-center">
                     <img src="kashaf.png" alt="Kashaf Naz" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Kashaf Naz</h3>
@@ -285,7 +326,8 @@
                 <div class="card credit-card card-team-2 p-4 text-center">
                     <img src="hooriya.png" alt="Hooriya Amir" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Hooriya Amir</h3>
-                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Presenter</h6>
+                    <h6 class="text-uppercase text-primary fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media
+                        Use Presenter</h6>
                     <p class="text-muted small">
                         Developed the guides on using the internet safely and presenting information to students.
                     </p>
@@ -296,7 +338,8 @@
                 <div class="card credit-card card-team-1 p-4 text-center">
                     <img src="male.jpg" alt="Ghazanfar Akram" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Ghazanfar Akram</h3>
-                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Researcher</h6>
+                    <h6 class="text-uppercase text-danger fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use
+                        Researcher</h6>
                     <p class="text-muted small">
                         Researched resources regarding responsible active social media use.
                     </p>
@@ -307,7 +350,8 @@
                 <div class="card credit-card card-team-3 p-4 text-center">
                     <img src="hasnain.png" alt="Hasnain Rasool Memon" class="avatar-circle">
                     <h3 class="h5 fw-bold text-dark mt-2">Hasnain Rasool Memon</h3>
-                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media Use Researcher</h6>
+                    <h6 class="text-uppercase text-success fw-bold mb-3" style="font-size: 0.8rem;">Responsible Media
+                        Use Researcher</h6>
                     <p class="text-muted small">
                         Researched resources regarding responsible active social media use.
                     </p>
@@ -336,16 +380,43 @@
                 </div>
             </div>
 
+                <div class="align-items-center">
+                    <p class="">
+                <button class="btn btn-warning btn-lg fw-bold rounded-pill px-4 shadow" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    View Poster
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                 <div class="card-group">
+                <div class="card">
+                    <img src="Poster.jpg" class="rounded" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-text">Results concluded on the bases of pre and post workshop surveys.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+            
+            </div>
         </div>
+
+
+
     </main>
 
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container text-center">
             <p class="mb-1 fw-bold">&copy; 2026 Digital Literacy Initiative.</p>
-            <p class="small text-white mb-0">Empowering underserved students with digital tools for a better tomorrow.</p>
+            <p class="small text-white mb-0">Empowering underserved students with digital tools for a better tomorrow.
+            </p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
